@@ -11,3 +11,8 @@ loadScript({ "client-id": YOUR_CLIENT_ID })
 .catch((err) => {
     console.error("failed to load the PayPal JS SDK script", err);
 });
+
+<script src="https://www.paypal.com/sdk/js?client-id=test"></script>
+<script>
+    paypal.Buttons().render("body");
+</script>
